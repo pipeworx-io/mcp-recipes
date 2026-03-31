@@ -1,13 +1,3 @@
-/**
- * Recipes MCP — wraps TheMealDB API (free tier, no auth)
- *
- * Tools:
- * - search_meals: search recipes by name
- * - get_meal: full recipe details by meal ID
- * - random_meal: get a random recipe
- * - meals_by_ingredient: find meals that use a specific ingredient
- */
-
 interface McpToolDefinition {
   name: string;
   description: string;
@@ -22,6 +12,17 @@ interface McpToolExport {
   tools: McpToolDefinition[];
   callTool: (name: string, args: Record<string, unknown>) => Promise<unknown>;
 }
+
+/**
+ * Recipes MCP — wraps TheMealDB API (free tier, no auth)
+ *
+ * Tools:
+ * - search_meals: search recipes by name
+ * - get_meal: full recipe details by meal ID
+ * - random_meal: get a random recipe
+ * - meals_by_ingredient: find meals that use a specific ingredient
+ */
+
 
 const BASE_URL = 'https://www.themealdb.com/api/json/v1/1';
 
