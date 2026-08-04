@@ -2,13 +2,13 @@
 
 Recipes MCP — wraps TheMealDB API (free tier, no auth)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `search_meals` | Search for recipes by meal name. Returns meal IDs, names, and thumbnail images. Use get_meal to fetch full ingredients and cooking instructions. |
+| `search_meals` | Search TheMealDB for recipes by meal name. Returns full recipe details — category, cuisine area, ingredients with measurements, step-by-step instructions, tags, thumbnail, and YouTube/source URLs. |
 | `get_meal` | Get complete recipe details including ingredients with measurements and step-by-step cooking instructions. Pass a meal ID from search_meals or random_meal. |
 | `random_meal` | Get a random meal recipe with full ingredients and cooking instructions. Use when you need recipe inspiration without a specific search. |
 | `meals_by_ingredient` | Find all recipes using a specific ingredient (e.g., "chicken", "garlic", "pasta"). Returns meal names and IDs to pass to get_meal. |
@@ -27,7 +27,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -51,7 +51,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
