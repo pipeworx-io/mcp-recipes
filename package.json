@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-recipes",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Recipes MCP — wraps TheMealDB API (free tier, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "recipes",
     "gatewaySlug": "recipes",
-    "sourceHash": "v1-b8fca5870365fd9598d7545ab3bc0691ecd2d7f13e12ab1a827b66efe0871584",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-d21e5846451446fb766ffd24319fe395fab0c05f2ae84cb8e34b10dfc621d6be",
+    "sourceCommit": "db27387ed3ef7ec4805d465f7964a7f65f937006"
   }
 }
